@@ -47,15 +47,6 @@ function Navbar({ onTempHandler }) {
     },
   };
 
-  const item = {
-    hidden: { z: 10, opacity: 0, scale: 0 },
-    visible: {
-      z: 100,
-      opacity: 1,
-      scale: 1,
-    },
-  };
-
   return (
     <div className="absolute top-0 flex justify-between w-full p-2 text-xl">
       <div className="flex">
