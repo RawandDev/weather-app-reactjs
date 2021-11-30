@@ -26,11 +26,7 @@ function WeatherDay({ weatherData, tempType }) {
 
   const days = getDays(weatherDay1);
 
-  // console.log(Array.from(days)?.["1"]?.["1"]?.["0"].weather?.["0"].main);
-
   const main = Array.from(days)?.["1"]?.["1"]?.["0"].weather?.["0"].main;
-
-  console.log("-------------------");
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -55,13 +51,9 @@ function WeatherDay({ weatherData, tempType }) {
 
   return (
     <motion.div
-      // initial={{ x: 0, opacity: 0 }}
-      // animate={{ x: 100, opacity: 1 }}
-      // transition={{ duration: 10 }}
       variants={container}
       initial="hidden"
       animate="visible"
-      // transition={{ duration: 10 }}
       className=" w-full mt-14 grid grid-cols-2 gap-4 sm:grid-rows-1 transition-all md:mb-32 m-2 md:grid-cols-5"
     >
       <motion.div variants={item}>

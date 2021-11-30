@@ -1,12 +1,4 @@
 import React from "react";
-// import Cloud from "./assets/cloud/35.png";
-// import Thunderstorm from "./assets/cloud/12.png";
-// import Rain from "./assets/cloud/17.png";
-// import Drizzle from "./assets/cloud/7.png";
-// import Snow from "./assets/cloud/23.png";
-// import Clear from "./assets/cloud/27.png";
-// import Other from "./assets/cloud/26.png";
-
 import Cloud from "./assets/cloud/cloud.svg";
 import Thunderstorm from "./assets/cloud/stormSun.svg";
 import Rain from "./assets/cloud/sunRain.svg";

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-function Input({ query, onHandleSubmit }) {
+function Input({ onHandleSubmit }) {
   const [value, setValue] = useState("");
 
   function handleChange(event) {
@@ -12,8 +12,6 @@ function Input({ query, onHandleSubmit }) {
     event.preventDefault();
     onHandleSubmit(value);
   }
-
-  // console.log(value);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
