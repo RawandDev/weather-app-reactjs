@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap");
+
+body {
+  font-family: "B612", sans-serif;
+  background-color: rgb(212, 212, 212);
+}
+
+.image {
+  width: -webkit-fill-available;
+}
+
+@layer components {
+  .app__container {
+    @apply m-10 bg-white rounded-3xl flex flex-col md:flex-row;
+  }
+
+  .spinner__container {
+    @apply text-center flex justify-center items-center my-80;
+  }
+
+  .weather__data__container {
+    @apply grid grid-flow-row gap-10 p-5;
+  }
+
+  .weather__main {
+    @apply text-2xl;
+  }
+
+  .weather__temp {
+    @apply text-6xl;
+  }
+
+  /* .image__container {
+    @apply bg-gray-200 h-40 w-80 shadow-2xl rounded-2xl object-cover object-center relative;
+  } */
+
+  /* .country__name {
+    @apply absolute top-16 left-28 z-10 text-white;
+  } */
+
+  /* .country__image {
+    @apply bg-gray-200 h-40 w-80 shadow-2xl rounded-2xl object-cover object-center filter brightness-50;
+  } */
+
+  .btn-yellow {
+    @apply bg-yellow-400 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-yellow:hover {
+    @apply bg-yellow-500;
+  }
+}
