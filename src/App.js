@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import WeatherList from "./components/WeatherList";
-import { API_URL, API_KEY } from "./constants";
+import { API_URL } from "./constants";
 import BounceLoader from "react-spinners/HashLoader";
 import Navbar from "./components/Navbar";
 import WeatherDay from "./components/WeatherDay";
@@ -18,7 +18,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `${API_URL}${query}&units=${tempType}&appid=${API_KEY}`
+          `${API_URL}${query}&units=${tempType}&appid=${process.env.REACT_APP_API_KEY}`
         );
         const data = await response.json();
         setWeatherData(data);
@@ -61,7 +61,9 @@ function App() {
     }
   }
 
-  console.log(`${API_URL}${query}&units=${tempType}&appid=${API_KEY}`);
+  console.log(
+    `${API_URL}${query}&units=${tempType}&appid=${process.env.REACT_APP_API_KEY}`
+  );
 
   console.log(tempType);
 
