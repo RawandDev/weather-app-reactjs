@@ -10,15 +10,9 @@ function WeatherList({
   countryImage,
   tempType,
 }) {
-  console.log(
-    "🚀 ~ file: WeatherList.js ~ line 7 ~ WeatherList ~ weatherData",
-    weatherData?.city?.name
-  );
-
   const mainWeather = weatherData?.list?.["0"].weather?.["0"].main;
 
   const mainTemp = weatherData?.list?.["0"].main.temp;
-  console.log("🚀 ~ file: WeatherList.js ~ line 21 ~ mainTemp", mainTemp);
 
   return (
     <div className="weather__data__container">
